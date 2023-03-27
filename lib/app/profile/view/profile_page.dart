@@ -142,7 +142,7 @@ class ProfileItem extends StatelessWidget {
           ),
           SizedBox(height: 6.sp),
           Text(
-            body,
+            body == "null" ? '' : body,
             style: Theme.of(context).textTheme.labelMedium!.copyWith(fontSize: 12.sp),
           ),
           Padding(
